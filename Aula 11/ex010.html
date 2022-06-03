@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade</title>
+</head>
+
+<body>
+    <h1>Sistemas de Nacionalidade</h1>
+    Informe o seu País: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = (txtv.value)
+            res.innerHTML = `<p>O país onde você mora é ${vel}</p>`
+            if (vel == "Brasil") {
+                res.innerHTML += '<p>Você tem nacionalidade brasileira</p>'
+            } else {
+                res.innerHTML += '<p>Você tem nacionalidade estrangeira</p>'
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
