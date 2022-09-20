@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | JavaScript</title>
+</head>
+<body>
+    <script>
+        function cadastroUsuario(usuario) {
+            var cadastroUsuario = prompt('CADASTRO: Digite um nome de Usuário:'); 
+            return cadastroUsuario
+        }
+
+        function cadastroSenha(senha) {
+           var cadastroSenha = prompt('CADASTRO: Digite uma senha:'); 
+           return cadastroSenha
+        }
+        var login = cadastroUsuario();
+        var senha = cadastroSenha();
+
+        var tentativa = 1
+        var tentativaMax = 3
+        
+        while (tentativa <= tentativaMax) {
+            var loginInformado = prompt("Informe seu login");
+            var senhaInformada = prompt("Informe sua senha");
+
+            if( login == loginInformado && senha == senhaInformada ) {
+                alert("Bem-vindo ao sistema " + loginInformado);
+                tentativa = tentativaMax;
+            } else {
+                if (tentativa == tentativaMax) {
+                    alert("Login inválido. Tentativas máximas atingidas.")
+                } else {
+                   alert("Login inválido. Tente novamente");
+                    tentativa ++;
+                }
+            }
+            tentativa ++;
+        }
+    </script>
+</body>
+</html>
