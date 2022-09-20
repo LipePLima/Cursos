@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(231, 182, 117);
+}
+main {
+    background-color: white;
+    margin: 1% 15%;
+    height: 95vh;
+    border-radius: 40px;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2rem 1rem;
+}
+
+.form__dados {
+    margin: 2% 0;
+    height: 1.2rem;
+    width: 50%;
+}
+
+.tipo {
+    font-size: 1.3rem;
+}
+
+.botao {
+    width: 50%;
+    height: 1.7rem;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+}

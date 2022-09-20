@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando JS</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Exercício de JavaScript</h1>
+        <form class="container container__form">
+            <div class="form__div">
+                <label for="inome" class="form__dados tipo" id="nome">Nome: </label>
+                <input type="text" class="form__dados" id="inome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="form__div">
+                <label for="ialt" class="form__dados tipo" id="altura">Altura: </label>
+                <input type="number" step="0.01" class="form__dados" id="ialt" placeholder="Digite sua altura" required>
+            </div>
+
+            <div class="form__div">
+                <label for="ipeso" class="form__dados tipo" id="peso">Peso: </label>
+                <input type="number" step="0.01" class="form__dados" id="ipeso" placeholder="Digite seu peso" required>
+            </div>
+
+            <input type="submit" value="Calcular" class="form__dados botao">
+        </form>
+        <div id="resposta"></div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

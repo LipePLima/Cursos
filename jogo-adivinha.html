@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript</title>
+</head>
+<body>
+    <script>
+        function separa() {
+            document.write('<br>');
+        }
+
+        function sorteia(n) {
+            return Math.round(Math.random()*n);
+        }
+
+        var numeroPensado = sorteia(parseInt(prompt('Digite até que número eu posso sortear?')))
+        console.log(numeroPensado);
+
+        var chute = parseInt(prompt('Qual número acha q é?'))
+        if (chute == numeroPensado) {
+            document.write('Parabéns, você acertou!')
+            separa();
+        } else {
+            document.write('Errooou!!');
+            separa();
+            if (chute < numeroPensado) {
+                document.write('Seu número foi menor que o número pensado por mim! O número foi ' + numeroPensado)
+            } else {
+                document.write('Seu número foi maior que o número pensado por mim! O número foi ' + numeroPensado)
+            }
+        }
+    </script>
+</body>
+</html>
