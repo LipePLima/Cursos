@@ -29,13 +29,12 @@
 
             if( login == loginInformado && senha == senhaInformada ) {
                 alert("Bem-vindo ao sistema " + loginInformado);
-                tentativa = tentativaMax;
+                break;
             } else {
                 if (tentativa == tentativaMax) {
                     alert("Login inválido. Tentativas máximas atingidas.")
                 } else {
                    alert("Login inválido. Tente novamente");
-                    tentativa ++;
                 }
             }
             tentativa ++;
