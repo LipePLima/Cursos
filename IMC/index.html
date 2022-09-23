@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <h1>Exercício de JavaScript</h1>
+        <h1>Calculo de IMC</h1>
         <form class="container container__form">
             <div class="form__div">
                 <label for="inome" class="form__dados tipo" id="nome">Nome: </label>
@@ -27,9 +27,11 @@
                 <input type="number" step="0.01" class="form__dados" id="ipeso" placeholder="Digite seu peso" required>
             </div>
 
-            <input type="submit" value="Calcular" class="form__dados botao">
+            <input type="submit" value="Calcular" class="form__dados botao" id="botao">
         </form>
-        <div id="resposta"></div>
+        <div>
+            <p id="resposta"></p>
+        </div>
     </main>
     <script src="main.js"></script>
 </body>
