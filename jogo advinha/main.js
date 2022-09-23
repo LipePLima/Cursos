@@ -17,12 +17,13 @@ function verifica() {
         alert('Parabéns, você acertou!')
     } else { 
         if (chute.value < numeroPensado) {
-            alert('Seu número foi menor que o número pensado por mim! Você só tem mais ' + (tentativas) + ' tentativas!');
+            alert('Seu número foi menor que o número pensado por mim!');
         } 
         else if (chute.value < numeroPensado) {
-            alert('Seu número foi maior que o número pensado por mim! Você só tem mais ' + (tentativas) + ' tentativas!');
+            alert('Seu número foi maior que o número pensado por mim!');
         } 
     }
+    chute.value = "";
 }
 
 botao.onclick = verifica;
