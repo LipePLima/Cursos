@@ -12,6 +12,8 @@ clientes.fone = '974622658'
 
 console.log(clientes)
 
+
+// Para alterar é o mesmo passo de adicionar, apenas mude o valor da variavel.
 clientes.fone = '975813543'
 
 console.log(clientes)
