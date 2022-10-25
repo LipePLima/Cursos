@@ -14,3 +14,7 @@ clientes.dependentes = {
 }
 
 console.log(clientes)
+
+clientes.dependentes.nome = 'Sara Lima'
+
+console.log(clientes)
