@@ -13,13 +13,20 @@ const clientes = {
             dataNasc: "20/03/2011"
         },
         {
-            nome: "Samia Maria",
+            nome: "Samia Lima",
             parentesco: "filha",
             dataNasc: "04/01/2014"
         }
     ]
 }
 
-for (let info in clientes) {
-    
+function seguro (object) {
+    const checkClientes = Object.keys(object);
+    if (checkClientes.includes('dependentes')) {
+        console.log(`O seguro foi disponibilizado para ${object.nome}`)
+    } else {
+        console.log(`${object.nome}, o seguro só é disponibilizado para quem tem dependentes`)
+    }
 }
+
+seguro(clientes)
