@@ -8,6 +8,11 @@ main {
     border-radius: 40px;
 }
 
+.container {
+    display: flex;
+    margin: 1rem 2rem .5rem;
+}
+
 h1 {
     padding: 1rem;
     font-size: 2rem;
@@ -19,7 +24,6 @@ form {
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 2rem 1rem;
 }
 
 .form__dados {
@@ -39,4 +43,29 @@ form {
 
 .botao:hover {
     background-color: #ffffff;
+}
+
+.tabela {
+    margin-bottom : .5em;
+    table-layout: fixed;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+.resposta {
+    margin-top: .5rem;
+}
+
+#resposta {
+    font-size: 1.2rem;
 }

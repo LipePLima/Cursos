@@ -1,14 +1,19 @@
-var nome = document.getElementById('#inome');
-var altura = document.getElementById('#ialt');
-var peso = document.getElementById('#ipeso');
-var resposta = document.getElementById('#resposta');
-var botao = document.getElementById('#botao');
+const botao    = document.querySelector('#botao');
 
+botao.addEventListener("click", function(e) {
+    e.preventDefault();
 
-function calculaIMC(altura, peso) {
-    var imc = peso / (altura*altura)
-    return imc
-}
+    const nome     = document.querySelector('#inome');
+    const altura   = document.querySelector('#ialt');
+    const peso     = document.querySelector('#ipeso');
+    const resposta = document.querySelector('#resposta');
 
-botao.onclick = calculaIMC;
-alert(nome + 'seu IMC é ' + botao);
+    const valorNome   = nome.value;
+    const valorAltura = altura.value;
+    const valorPeso   = peso.value;
+    const calculaIMC  = (valorPeso / (valorAltura * valorAltura)).toFixed(2);
+
+    resposta.textContent = `${valorNome}, calculei seu IMC e o resultado é ${calculaIMC}`
+})
+    
+
