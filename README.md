@@ -4,4 +4,4 @@ Neste repositório, estarei compartilhando toda a minha evolução na linguagem 
 E terá exercícios de 2 cursos:
   - Curso em Vídeo
   - Alura
- 
+Além dos meus próprios exercícios!
