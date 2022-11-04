@@ -15,16 +15,23 @@ for (let i = 0; i < pacientes.length; i++ ) {
     const altura   = paciente.querySelector('.info-altura').textContent;
     const IMC      = paciente.querySelector('.info-imc')
 
+    const alturaValida = validaAltura(altura);
+    const pesoValido   = validaPeso(peso);
+    
     // Condicionais para validar o cálculo.
-    if ( peso <= 1 || peso >= 500 ) {
+    if (!pesoValido) {
         IMC.textContent = "Peso inválido"; // Informa o erro
         IMC.classList.add('.valor-invalido'); // altera a cor
 
-    } else if ( altura <= 1 || altura >= 3.00 ) {
+    } 
+    
+    if (!alturaValida) {
         IMC.textContent = "Altura inválida"; // Informa o erro 
         IMC.classList.add('valor-invalido'); // altera a cor
 
-    } else {
+    } 
+    
+    if (pesoValido && alturaValida) {
         IMC.textContent = calcIMC(peso, altura);
     }
 }

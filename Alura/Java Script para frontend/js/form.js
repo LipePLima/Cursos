@@ -9,9 +9,18 @@ btn.addEventListener("click", function(event) {
 
     const form     = document.querySelector('#form-adiciona'); // capturando informações do formulário.
     const paciente = dadosNovoPaciente(form);
-    const linha    = montaTr(paciente);
+    const erros    = validaPaciente(paciente);
+    
+    if (erros.length > 0) {
+        exibeMensagensErro(erros);
+        return;
+    }
 
-    form.reset()
+    const linha  = montaTr(paciente);
+
+    exibeMensagensErro(erros);
+
+    form.reset();
 })
 
 function dadosNovoPaciente (form) {
