@@ -16,12 +16,16 @@ btn.addEventListener("click", function(event) {
         return;
     }
 
-    const linha  = montaTr(paciente);
-
     exibeMensagensErro(erros);
 
     form.reset();
 })
+
+function adicionarPacienteNaTabela (paciente) {
+    const linha  = montaTr(paciente);
+    const table  = document.querySelector('#tabela-pacientes');
+    table.appendChild(linha)
+}
 
 function dadosNovoPaciente (form) {
     const paciente = {
