@@ -16,16 +16,11 @@ btn.addEventListener("click", function(event) {
         return;
     }
 
+    adicionarPacienteNaTabela(paciente);
     exibeMensagensErro(erros);
 
     form.reset();
 })
-
-function adicionarPacienteNaTabela (paciente) {
-    const linha  = montaTr(paciente);
-    const table  = document.querySelector('#tabela-pacientes');
-    table.appendChild(linha)
-}
 
 function dadosNovoPaciente (form) {
     const paciente = {
@@ -39,8 +34,8 @@ function dadosNovoPaciente (form) {
     return paciente;
 }
 
-function montaTr (paciente) {
-    const table = document.querySelector('#tabela-pacientes'); // capturando informções da tabela.
+function adicionarPacienteNaTabela (paciente) {
+    const table  = document.querySelector('#tabela-pacientes');
 
     // Criando as tag de linha e coluna para adicionar dados de um novo paciente.
     const pacientetr = document.createElement('tr');
@@ -53,7 +48,6 @@ function montaTr (paciente) {
     pacientetr.appendChild(montaTd(paciente.gordura, 'info-gordura'));
     pacientetr.appendChild(montaTd(paciente.imc, 'info-imc'));
 
-    // atribuindo a tag "tr" à tabela.
     table.appendChild(pacientetr);
 }
 
