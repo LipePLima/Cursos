@@ -1,3 +1,4 @@
+const form     = document.querySelector('.container__form')
 const botao    = document.querySelector('#botao');
 const resposta = document.querySelector('#resposta');
 const calcIMC  = ( peso, altura) => (peso / (altura*altura)).toFixed(2);
@@ -17,6 +18,8 @@ botao.addEventListener("click", function(e) {
         resposta.classList.remove('invisivel')
         resposta.textContent = `${pessoa.nome}, calculei seu IMC e o resultado foi ${pessoa.imc}`
     }
+
+    form.reset();
 })
 
 function dados () {
@@ -33,54 +36,3 @@ function dados () {
 
     return dados;
 }
-
-function validaAltura (altura) {
-    if(altura > 1 && altura < 3) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function validaPeso (peso) {
-    if(peso > 1 && peso < 500) {
-        return true;
-    } else { 
-        return false;
-    }
-}
-
-function validaForm (pessoa) {
-    const erros = [];
-
-    if (pessoa.nome.length == 0) {
-        erros.push('Digite seu nome')
-    }
-
-    if (pessoa.altura.length == 0) {
-        erros.push('Digite sua altura')
-    } else if (!validaAltura(pessoa.altura)) {
-        erros.push('Altura inválida')
-    } 
-
-    if (pessoa.peso.length == 0) {
-        erros.push('Digite seu peso')
-    } else if (!validaPeso(pessoa.peso)) {
-        erros.push('Peso inválido')
-    }
-
-    return erros;
-}
-
-function exibeListaErro (erros) {
-    const ul = document.querySelector('#erros')
-    ul.innerHTML = '';
-
-    erros.forEach(erro => {
-        const li = document.createElement('li');
-        li.classList.add('erro')
-        li.textContent = erro;
-        ul.appendChild(li);
-    });
-}
-
