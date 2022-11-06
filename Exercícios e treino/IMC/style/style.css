@@ -69,3 +69,11 @@ th{
 #resposta {
     font-size: 1.2rem;
 }
+
+.invisivel {
+    display: none;
+}
+
+.erro {
+    color: red;
+}
