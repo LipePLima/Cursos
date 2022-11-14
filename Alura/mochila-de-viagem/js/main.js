@@ -3,7 +3,7 @@ const lista = document.querySelector('#lista');
 const itens = JSON.parse(localStorage.getItem("items")) || [];
 
 itens.forEach( (elemento) => {
-    console.log(elemento.nome, elemento.quantidade)
+    criaElemento(elemento)
 });
 
 form.addEventListener('submit', (evento) => {
@@ -11,9 +11,22 @@ form.addEventListener('submit', (evento) => {
 
     const nome       = evento.target.elements['nome'].value;
     const quantidade = evento.target.elements['quantidade'].value;
+    const existe     = itens.find( elemento => elemento.nome == nome.value )
     const itemAtual  = {
         'nome': nome.value,
         'quantidade': quantidade.value
+    }
+
+    if (existe) {
+        itemAtual.id = existe.id
+        
+        atualizaElemento(itemAtual)
+    } else {
+        itemAtual.id = itens.length
+
+        criaElemento(itemAtual)
+
+        itens.push(itemAtual)
     }
     
     itens.push(itemAtual);
@@ -25,7 +38,7 @@ form.addEventListener('submit', (evento) => {
     form.reset()
 })
 
-function criaElemento(nome, quantidade) {
+function criaElemento(item) {
     const novoItem = document.createElement('li');
     const numItem  = document.createElement('strong');
 
