@@ -1,0 +1,82 @@
+.rodape {
+	background-color: #324C64;
+	padding-top: 25px;
+}
+
+.rodape .mapa__cursos {
+	color: #FFF;
+} 
+
+.mapa__cursos {
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.cursos-links__link {
+	text-decoration: none;
+	color: #FFF;
+	margin-top: 10px;
+	font-size: .9em;
+}
+
+.cursos-links__linguagens {
+	font-weight: 700;
+	font-size: 1.2em;
+	margin: .9em 0;
+	padding-left: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+.cursos-links__linguagens + .mapa__cursos-links {
+	margin-top: 0;
+}
+
+.backend { color: #25D285; border-left: 4px solid #25D285; } 
+.frontend { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+.frameworks { color: #AD85BF; border-left: 4px solid #AD85BF; }
+.banco-de-dados { color: #EC6E5A; border-left: 4px solid #EC6E5A; }
+
+.rodapefinal__patrocinadores {
+	margin-top: 30px;
+	background: #F2F5F7;
+	padding: 20px 0;
+}
+
+.rodapefinal__contatoform {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.contatoform__legend {
+	margin-bottom: 10px;
+}
+
+.contatoform__legend label[for=email-contato] {
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.contatoform__input {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 10px;
+}
+
+.contatoform__botao {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #4DBA7A;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.contatoform__input, .contatoform__botao {
+	outline: 0;
+	border: 1px solid #4DBA7A;
+	box-sizing: border-box;
+	font-size: 16px;
+}

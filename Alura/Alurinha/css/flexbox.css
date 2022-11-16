@@ -1,0 +1,127 @@
+/* HEADER */
+
+.container__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* MAIN */
+
+.cursos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cursos-lista__curso {
+    width: 23%;
+}
+
+.container__vantagens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vantagens__sobre {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-grow: 3;
+}
+
+.vantagens__video {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+.sobre__lista {
+    flex-grow: 1;
+}
+/* FOOTER */
+
+.mapa__cursos-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 262px;
+}
+
+.container__footer-patrocinadores {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.patrocinadores__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapefinal__contatoform {
+    width: 25%;
+}
+
+.contatoform__fieldset {
+    display: flex;
+} 
+
+
+/* MOBILE */
+@media(max-width: 768px) {
+    .container__header {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    .cabecalho__opcoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opcoes-mobile {
+        order: -1;
+    }
+
+    .container__main {
+        flex-direction: column;
+    }
+
+    .cursos-lista__curso {
+        width: 100%;
+    }
+
+    .container__vantagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vantagens__video {
+        margin: 0 auto;
+    }
+
+    .mapa__cursos-links {
+        height: auto;
+    }
+
+    .container__footer-patrocinadores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodapefinal__contatoform {
+        width: auto;
+    }
+
+    .patrocinadores__list {
+        margin: 0 10px;
+    }
+
+    .contatoform__fieldset {
+        justify-content: center;
+    }
+}

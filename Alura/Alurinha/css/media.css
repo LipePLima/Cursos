@@ -1,0 +1,65 @@
+@media(min-width: 769px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.cabecalho__logo {
+		margin: 0;
+	}
+
+	.opcoes__nav__link {
+		width: auto;
+		margin: 0 0 0 10px;
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.opcoes__nav__link:hover {
+		color: #FFF;
+		background-color: #9799A6;
+	}
+	
+	.corpo__titulo {
+		text-align: left;
+	}
+	
+	.cursos-lista__curso:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.cursos-lista__curso:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+	.rodapefinal__contatoform {
+		margin-top: 0;
+		text-align: left;
+	}
+}
+
+@media(min-width: 1000px) {
+	.cursos-lista__curso {
+		margin: 1.333%;
+	}
+
+	.cursos-lista__curso:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.cursos-lista__curso:nth-child(3n+1) {
+		margin-left: 1.333%;
+	}
+
+	.cursos-lista__curso:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.cursos-lista__curso:nth-child(4n+1) {
+		margin-left: 0;
+	}
+
+	.vantagens__sobre {
+		margin-left: 1.5em;
+	}
+}
