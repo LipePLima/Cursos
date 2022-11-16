@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+:root {
+    --url-imagem01: imagens\background001.jpg;
+    --url-imagem02: imagens\background002.jpg;
+    --fonte-principal: 'Passion One', cursive;
+    --font-secundária: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-geral: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font-secundária)
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-variant: small-caps;
+    font-family: var(--fonte-principal);
+    font-size: 10vw;
+    padding-top: 50px;
+}
+
+header p {
+    font-family: var(--font-secundária);
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte-geral);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb( 51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-secundária);
+    
+}
+
+footer p {
+    padding: 10px;
+    word-spacing: 0.5;
+}
+
