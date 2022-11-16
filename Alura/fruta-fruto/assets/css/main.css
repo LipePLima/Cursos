@@ -1,0 +1,242 @@
+/* BANNER */
+
+.banner {
+    position: relative;
+}
+
+.banner__imagem {
+    background: url('../img/banner.jpg') no-repeat center /cover;
+    height: calc(100vh - 72px);
+    width: 100%;
+}
+
+.banner__titulo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 81px;
+    line-height: 142px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+/* SOBRE */
+
+.sobre {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.sobre__titulo {
+    color: #8D0606;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 90px;
+}
+
+.sobre__descricao {
+    color: #8C8888;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+/* RECEITA */
+
+.receitas {
+    background: #E5E5E5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+}
+
+.receita {
+    background: #fdfdfd;
+    box-sizing: border-box;
+
+    position: relative;
+    width: 286px;
+    height: 384px;
+    margin: 3rem;
+
+    border: 1px solid #C4C4C4;
+    border-radius: 2px;
+}
+
+.receita__div {
+    padding: 1.2rem;
+}
+
+.receita__titulo {
+    font-size: 1.4375rem;
+}
+
+.receita__descricao {
+    font-size: 1.1875rem;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.receita__botao {
+    background-color: #8D0606;
+    color: #FFFFFF;
+    width: 115px;
+    height: 32px;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+}
+
+.receita__botao:hover {
+    cursor: pointer;
+    background: #620404;
+    width: 116px;
+    height: 33px;
+}
+
+/* QUEM SOMOS */
+
+.quem-somos__topo {
+    text-align: center;
+    font-size: 32px;
+}
+
+.quem-somos__titulo {
+    color: #8D0606;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 90px;
+}
+
+.quem-somos__descricao {
+    color: #8C8888;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+/* PESSOAS */
+
+.pessoas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 3.9rem;
+}
+
+.pessoas__pessoa {
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.pessoa__imagem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.pessoa__imagem--roberta {
+    background-image: url('../img/pessoas/roberta.jpg');
+}
+
+.pessoa__imagem--marcela {
+    background-image: url('../img/pessoas/marcela.jpg');
+}
+
+.pessoa__imagem--andreia {
+    background-image: url('../img/pessoas/andreia.jpg');
+}
+
+.pessoa__nome {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: #8D0606;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.pessoa__funcao {
+    font-family: 'Roboto', sans-serif;
+    color: #8C8888;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+}
+
+@media screen and (min-width: 300px) and (max-width: 490px) {
+    .banner__imagem {
+        height: calc(100vh - 130px);
+    }
+    
+    .banner__titulo {
+        font-size: 2.5rem;
+    }
+
+    .sobre {
+        padding: 2rem;
+    }
+
+    .sobre__titulo {
+        font-size: 2.3rem;
+    }
+
+    .sobre__descricao {
+        font-size: 1.3rem;
+    }
+
+    .receita {
+        width: 286px;
+        height: 384px;
+        margin: 2rem -1.7rem;
+    }
+
+    .receita__image {
+        width: 100%;
+    }
+
+    .receita__titulo {
+        font-size: 1.3rem;
+    }
+    
+    .receita__descricao {
+        font-size: 1rem;
+    }
+
+    .quem-somos__titulo {
+        font-size: 2.3rem;
+    }
+    
+    .quem-somos__descricao {
+        font-size: 1.3rem;
+    }
+
+    .pessoas {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5rem 0 0 3.9rem;
+    }
+    
+    .pessoas__pessoa {
+        padding: 1rem 0;
+        margin: 0 -1rem;
+        text-align: center;
+    }
+}
