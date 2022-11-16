@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades Tech</title>
+    <link rel="stylesheet" href="css/cadastrese.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Curiosidades de Tecnologia</h1>
+        <p>
+            Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar.
+        </p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Notícias</a>
+            <a href="cadastrese.html">Cadastre-se</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </header>
+    <main>
+        <form action="cadastro.php" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="iname" class="dados">Nome</label>
+                    <input type="text" name="nome" id="iname" required minlength="3" maxlength="30" class="pes">
+                </p>    
+                <p>
+                    <label for="inasc"class="dados">Data de Nascimento</label >
+                    <input type="date" name="nascimento" id="inasc" required class="pes">
+                </p>
+                <p>
+                    <label for="itel" class="pes">Telefone</label>
+                    <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxx" pattern="^\d{11}$" class="pes">
+                </p>   
+                <p>
+                    <label for="imail" class="pes">Email:</label>
+                    <input type="email" name="email" id="imail" required class="pes">
+                </p>
+                <p>
+                    <label for="isenha" class="pes">Senha:</label>
+                    <input type="password" name="senha" id="isenha" placeholder="xxxxx" maxlength="15" minlength="8" required class="pes">
+                </p>                
+            </fieldset>
+            <fieldset>
+                <legend>Avaliação</legend>
+                <p>Conteúdo:</p>
+
+                <input type="radio" name="ava" id="imtbom" class="av"> <label for="imtbom" id="label">Muito bom</label><br>
+
+                <input type="radio" name="ava" id="ibom" class="av"> <label for="ibom" id="label">Bom</label><br>  
+
+                <input type="radio" name="ava" id="imedio" checked class="av"> <label for="imedio" id="label">Indiferente</label><br> 
+
+                <input type="radio" name="ava" id="iruim" class="av"> <label for="iruim" id="label">ruim</label><br>
+
+                <input type="radio" name="ava" id="imtruim" class="av"> <label for="imtruim" id="label">Muito ruim</label><br>  
+
+                <label for="isug" id="label">Sugestões</label>
+                <input type="text" name="sug" id="isug" class="av" size="30"> 
+                <p></p>
+            </fieldset>
+            <input type="submit" value="Enviar" class="botao">
+        </form>    
+    </main>
