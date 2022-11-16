@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <!-- action é para conectar com arquivo php e autocomplete é para desativar ou ativar(padrão) as sugestões -->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p> 
+            <!-- label é utilizado para conectar o objeto de formulário e sua etiqueta -->
+            <label for="inome">Nome:</label> 
+            <!-- input é a caixa de texto onde o usuário irá inserir suas informações -->
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p> 
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+
+<!-- O método(method="") de um formulário por padrão é o GET, que é um método público e com limite de 3000 bytes. Porém, existe o POST, que é um método mais privado, porém não é seguro para proteger dados sigilosos(senha, cartão de crédito). Para proteger dados sigilosos, estudar e utilizar HTTPS -->

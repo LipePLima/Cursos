@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe.tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eaque repellat totam tempore debitis nisi harum cum esse consectetur quia exercitationem ex officiis necessitatibus rerum nobis nihil, odio similique minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores a placeat tempore fugiat minus laborum cum, nulla, sed aliquid eum vero dolore, odit reiciendis commodi voluptatem rem libero quo alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vel tempora doloremque eveniet quas dicta suscipit ex iure ad voluptatem illo fugiat, error qui quasi molestiae tempore nobis laborum provident.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, officia unde. Temporibus corporis provident corrupti sint possimus quidem vel officiis! Non doloribus labore nihil minima aperiam deserunt in. Soluta, quis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatem necessitatibus maiores enim, beatae facere ullam sequi consectetur animi doloribus nemo nisi explicabo quas dolores facilis, perspiciatis harum temporibus in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate perferendis, consectetur earum eum possimus fuga illo architecto in accusamus suscipit a eos dicta officiis soluta corporis neque quod tempora adipisci?</p>
+
+    <!-- iframe com name para linkar com outras tags e srcdoc para criar um código HTML dentro do próprio iframe -->
+    <iframe class="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis, id totam vitae culpa voluptatibus nulla. Ad in maxime sed accusantium suscipit adipisci sit tempore voluptas ducimus quidem, consectetur ullam?Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>" frameborder="0">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis, id totam vitae culpa voluptatibus nulla. Ad in maxime sed accusantium suscipit adipisci sit tempore voluptas ducimus quidem, consectetur ullam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis enim dolorem minus dolore ab quae soluta recusandae, aliquid iure dicta tenetur unde earum reprehenderit, incidunt sequi praesentium, sapiente omnis ea.</p>
+</body>
+</html>

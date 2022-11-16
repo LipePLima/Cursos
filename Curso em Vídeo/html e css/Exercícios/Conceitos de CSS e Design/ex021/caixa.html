@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+            background-color: antiquewhite;
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            simplificando...
+            */
+            border: 10px solid darkslategray;
+            
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            simplificando...
+            */
+            padding: 10px;
+
+            /*
+            margin: auto (para centralizar o objeto automaticamente sem interferencia no tamanho do navegador.)
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            simplificando...
+            */
+            margin: auto;
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;
+
+            simplificando...
+            */
+            outline: 5px dashed red;
+            
+        }
+
+        a { /* inline-level */
+            border: 2px groove red;
+            padding: 1px;
+        }
+
+        /* O comando "display" pode modificar o tipo de box das tags ficando display: inline ou display: block e ainda display: inline-block */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="">links são exemplos de caixas inline-level.</a> Vamos ver como isso funciona.</p>
+</body>
+</html>
