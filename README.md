@@ -1,6 +1,6 @@
-<h1>Curso de JavaScript</h1>
+<h1>Curso</h1>
 
-Neste repositório, estarei compartilhando toda a minha evolução na linguagem JavaScript.
+Neste repositório, estarei compartilhando toda a minha evolução com as linguagens HTML, CSS, JavaScript e também Python.
 E terá exercícios de 2 cursos:
   - Curso em Vídeo
   - Alura
