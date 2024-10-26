@@ -1,7 +1,6 @@
-<h1>Curso</h1>
+<h1>Cursos | Courses</h1>
 
-Neste repositório, estarei compartilhando toda a minha evolução com as linguagens HTML, CSS, JavaScript e também Python.
-E terá exercícios de 2 cursos:
-  - Curso em Vídeo
-  - Alura
-Além dos meus próprios exercícios!
+In this repository, I will be sharing all my progress with the languages HTML, CSS, JavaScript, and also Python. It will include exercises from two courses:
+ - Curso em Vídeo
+ - Alura
+ - Along with my own exercises!
